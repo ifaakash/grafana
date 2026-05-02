@@ -431,7 +431,7 @@
                   "rowHeightMode": "standard"
                 }
               },
-              "title": "Ollama memory used in MB"
+              "title": "Ollama memory used in GB"
             }
           }
         ]
@@ -467,7 +467,7 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "now-1h",
+      "from": "now-6h",
       "hideTimepicker": false,
       "timezone": "browser",
       "to": "now"
