@@ -269,7 +269,7 @@
           "description": "",
           "id": 3,
           "links": [],
-          "title": "New panel",
+          "title": "Memory bytpe",
           "vizConfig": {
             "group": "timeseries",
             "kind": "VizConfig",
@@ -431,7 +431,7 @@
                   "rowHeightMode": "standard"
                 }
               },
-              "title": "New row 1"
+              "title": "Ollama memory used in MB"
             }
           }
         ]
