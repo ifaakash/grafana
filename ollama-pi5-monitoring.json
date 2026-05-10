@@ -185,7 +185,7 @@
           "description": "",
           "id": 2,
           "links": [],
-          "title": "New panel",
+          "title": "Pi5 Temperature",
           "vizConfig": {
             "group": "timeseries",
             "kind": "VizConfig",
@@ -303,7 +303,7 @@
           "description": "",
           "id": 3,
           "links": [],
-          "title": "Memory bytpe",
+          "title": "Ollama memory used in GB",
           "vizConfig": {
             "group": "timeseries",
             "kind": "VizConfig",
@@ -459,10 +459,6 @@
                       {
                         "color": "green",
                         "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
                       }
                     ]
                   }
@@ -501,22 +497,49 @@
             "spec": {
               "collapse": false,
               "layout": {
-                "kind": "AutoGridLayout",
+                "kind": "GridLayout",
                 "spec": {
-                  "columnWidthMode": "standard",
                   "items": [
                     {
-                      "kind": "AutoGridLayoutItem",
+                      "kind": "GridLayoutItem",
                       "spec": {
                         "element": {
                           "kind": "ElementReference",
                           "name": "panel-1"
-                        }
+                        },
+                        "height": 10,
+                        "width": 8,
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "kind": "GridLayoutItem",
+                      "spec": {
+                        "element": {
+                          "kind": "ElementReference",
+                          "name": "panel-2"
+                        },
+                        "height": 10,
+                        "width": 8,
+                        "x": 8,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "kind": "GridLayoutItem",
+                      "spec": {
+                        "element": {
+                          "kind": "ElementReference",
+                          "name": "panel-3"
+                        },
+                        "height": 10,
+                        "width": 8,
+                        "x": 16,
+                        "y": 0
                       }
                     }
-                  ],
-                  "maxColumnCount": 3,
-                  "rowHeightMode": "standard"
+                  ]
                 }
               },
               "title": "Pi5 RAM Status"
@@ -527,74 +550,23 @@
             "spec": {
               "collapse": false,
               "layout": {
-                "kind": "AutoGridLayout",
+                "kind": "GridLayout",
                 "spec": {
-                  "columnWidthMode": "standard",
                   "items": [
                     {
-                      "kind": "AutoGridLayoutItem",
-                      "spec": {
-                        "element": {
-                          "kind": "ElementReference",
-                          "name": "panel-2"
-                        }
-                      }
-                    }
-                  ],
-                  "maxColumnCount": 3,
-                  "rowHeightMode": "standard"
-                }
-              },
-              "title": "Pi5 Temperature"
-            }
-          },
-          {
-            "kind": "RowsLayoutRow",
-            "spec": {
-              "collapse": false,
-              "layout": {
-                "kind": "AutoGridLayout",
-                "spec": {
-                  "columnWidthMode": "standard",
-                  "items": [
-                    {
-                      "kind": "AutoGridLayoutItem",
-                      "spec": {
-                        "element": {
-                          "kind": "ElementReference",
-                          "name": "panel-3"
-                        }
-                      }
-                    }
-                  ],
-                  "maxColumnCount": 3,
-                  "rowHeightMode": "standard"
-                }
-              },
-              "title": "Ollama memory used in GB"
-            }
-          },
-          {
-            "kind": "RowsLayoutRow",
-            "spec": {
-              "collapse": false,
-              "layout": {
-                "kind": "AutoGridLayout",
-                "spec": {
-                  "columnWidthMode": "standard",
-                  "items": [
-                    {
-                      "kind": "AutoGridLayoutItem",
+                      "kind": "GridLayoutItem",
                       "spec": {
                         "element": {
                           "kind": "ElementReference",
                           "name": "panel-4"
-                        }
+                        },
+                        "height": 10,
+                        "width": 8,
+                        "x": 0,
+                        "y": 0
                       }
                     }
-                  ],
-                  "maxColumnCount": 3,
-                  "rowHeightMode": "standard"
+                  ]
                 }
               },
               "title": "New row"
@@ -646,7 +618,7 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "now-1h",
+      "from": "now-6h",
       "hideTimepicker": false,
       "timezone": "browser",
       "to": "now"
