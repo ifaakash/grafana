@@ -430,7 +430,8 @@
               "fieldConfig": {
                 "defaults": {
                   "color": {
-                    "mode": "palette-classic"
+                    "fixedColor": "light-yellow",
+                    "mode": "shades"
                   },
                   "thresholds": {
                     "mode": "absolute",
