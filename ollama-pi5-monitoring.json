@@ -66,7 +66,7 @@
           "description": "",
           "id": 1,
           "links": [],
-          "title": "Pi5 Memory Status ( IN MB )",
+          "title": "Pi5 Memory Status ( in MB )",
           "transparent": true,
           "vizConfig": {
             "group": "timeseries",
@@ -185,7 +185,7 @@
           "description": "",
           "id": 2,
           "links": [],
-          "title": "Pi5 Temperature",
+          "title": "Pi5 Temperature ( in °C )",
           "vizConfig": {
             "group": "timeseries",
             "kind": "VizConfig",
@@ -303,7 +303,7 @@
           "description": "",
           "id": 3,
           "links": [],
-          "title": "Ollama memory used in GB",
+          "title": "Ollama memory used ( in GB )",
           "vizConfig": {
             "group": "timeseries",
             "kind": "VizConfig",
@@ -646,7 +646,7 @@
                   ]
                 }
               },
-              "title": "New row"
+              "title": "LiteLLM"
             }
           }
         ]
