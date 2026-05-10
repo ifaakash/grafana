@@ -403,36 +403,15 @@
                       "group": "prometheus",
                       "kind": "DataQuery",
                       "spec": {
-                        "editorMode": "builder",
-                        "expr": "llm_completion_tokens_total{api_key=\"qwertyuiop\", model=\"ollama/qwen:1.8b\"}",
+                        "editorMode": "code",
+                        "exemplar": false,
+                        "expr": "llm_completion_tokens_total{model=\"ollama/qwen:1.8b\", api_key=\"qwertyuiop\"}",
                         "legendFormat": "__auto",
                         "range": true
                       },
                       "version": "v0"
                     },
-                    "refId": "A"
-                  }
-                },
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "efkqzq5wr8zcwc"
-                      },
-                      "group": "prometheus",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "builder",
-                        "expr": "llm_prompt_tokens_total{model=\"ollama/qwen:1.8b\", api_key=\"qwertyuiop\"}",
-                        "instant": false,
-                        "legendFormat": "__auto",
-                        "range": true
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "B"
+                    "refId": "Completion token"
                   }
                 }
               ],
@@ -466,7 +445,7 @@
                 "overrides": []
               },
               "options": {
-                "colorMode": "value",
+                "colorMode": "none",
                 "graphMode": "area",
                 "justifyMode": "auto",
                 "orientation": "auto",
